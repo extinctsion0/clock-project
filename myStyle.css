@@ -3,7 +3,7 @@
     padding: 0;
 }
 .clock-body{
-    background-color: #4e505a;
+    background-color: #2477b6;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -17,10 +17,10 @@
     height: 300px;
     width: 600px;
     border-radius: 5px;
-    background-color: rgb(146, 4, 4);
-    color: #000000;
+    background-color: black;
+    color: #2ed9f7;
     padding: 10px 20px;
-    font-size: 60px;
+    font-size: 40px;
     border: 5px solid #ffffff;
     display: flex;
     flex-direction: column;
