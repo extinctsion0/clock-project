@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <link rel="stylesheet" href="myStyle.css">
+    <title>Hello, world!</title>
+    <script>
+        var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let a
+        let time
+        let date
+        let day
+        setInterval(() => {
+            a = new Date()
+            date = a.toLocaleDateString()
+            console.log(dayNames[a.getDay()]);
+
+            time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds()
+            document.getElementById('time').innerHTML = time + "<br>at " + date
+        }, 1000);
+        setInterval(() => {
+            a = new Date()
+            date = a.toLocaleDateString()
+            // console.log();
+
+            day =dayNames[a.getDay()]
+            console.log(day);
+            document.getElementById('day').innerHTML = day
+        }, 1000);
+
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark" style="background-color: rgb(241, 127, 21);">
+        home
+    </nav>
+    <nav class="navbar navbar-light" style="background-color: rgb(252, 253, 246);">
+        about
+    </nav>
+    
+    <nav class="navbar navbar-light" style="background-color: rgb(21, 241, 69);">
+        preface
+    </nav>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="display-4">time as of now is <span id="time"></span> </h1>
+            <div id="day"></div>
+            <p class="lead">I m here to provide you the time at ur local location as u changes the place u can modify
+                the code further.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.
+            </p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">browse times</a>
+            </p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
